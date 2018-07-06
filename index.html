@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Academy 2018: UI & UX</title>
+
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+      <link rel="stylesheet" type="text/css" media="screen" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <script  src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+      <script src="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+
+      <style>
+         table td.highlighted {
+            background-color:#999;
+         }
+         table td.highlighted-final {
+            background-color:#b8dbf9;
+         }
+      </style>
+   </head>
+   <body class="body-flex">
+         <div class="user-time">
+            <img class="user-photo" src="img/userphoto.png" alt="photo">
+            <div class="user-info">
+               <h1 class="h1">Gregory House</h1>
+               <p class="p">Infectiologist and nephrologist</p>
+               <div class="icon-p">
+               <i class="fa fa-mobile fa-2x icon" aria-hidden="true"></i>
+               <p class="p">1-212-123 45 67</p>
+               </div>
+            </div>
+         </div>
+         <div class="time-box">
+              <div class="start-end">
+                <div class="start-end-woks">
+                  <h1 class="p-0">Select the start time</h1>
+                  <div class="start-time" style="overflow:hidden;">
+                   <div class="form-group">
+                       <div class="row">
+                           <div class="col-md-8">
+                               <div id="datetimepicker3" class="start"></div>
+                           </div>
+                       </div>
+                   </div>
+                   <script >
+                       $(function () {
+                           $('.start').datetimepicker({
+                               inline: true,
+                               sideBySide: true,
+                               format: 'HHmm',
+                               useCurrent: false
+                           });
+                       });
+                   </script>
+                  </div>
+                  <h1 id="applyButton" class="p-0 apply-close">Apply</h1>
+
+               </div>
+               <div class="start-end-woks">
+               <h1 class="p-0">Select the end time</h1>
+               <div class="end-time" style="overflow:hidden;">
+                   <div class="form-group">
+                       <div class="row">
+                           <div class="col-md-8">
+                               <div id="datetimepicker4" class="end"></div>
+                           </div>
+                       </div>
+                   </div>
+                   <script >
+                       $(function () {
+                           $('.end').datetimepicker({
+                               inline: true,
+                               sideBySide: true,
+                               format: 'HHmm',
+                               useCurrent: false
+                           });
+                       });
+                   </script>
+               </div>
+               <h1 id="cancelButton" class="p-0 apply-close">Cancel</h1>
+             </div>
+              </div>
+         </div>
+         <div class="name-table">
+         <h1 class="h1-choose">Choose a working hous for a week</h1>
+         <table class="table">
+           <thead>
+             <tr>
+               <th>Date/Time</th>
+               <th>Sun</th>
+               <th>Mon</th>
+               <th>Tues</th>
+               <th>Wed</th>
+               <th>Thurs</th>
+               <th>Fri</th>
+               <th>Sat</th>
+             </tr>
+          </thead>
+          <tbody>
+             <tr>
+               <td>00:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>01:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>02:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>03:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>04:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>05:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>06:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>07:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>08:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>09:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>10:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>11:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>12:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>13:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>14:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>15:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>16:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>17:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>18:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>19:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>20:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>21:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>22:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr>
+               <td>23:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+             </tr>
+           </tbody>
+         </table>
+      </div>
+
+   <script>
+        $(function() {
+        var isMouseDown = false;
+        var daySelected = "";
+        var startHour;
+        var endHour;
+
+        var clickedItem;
+
+        // setup days // relative to table column number
+        let daysN = 2;
+        ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'].forEach(function(element) {
+            $('.table tbody tr td:nth-child(' + (daysN++) + ')').data('day', daysN - 1);
+        })
+        // done setting up days
+
+        $(".table tbody td")
+            .mousedown(function() {
+                clickedItem = $(this);
+                startHour = $(this)[0].parentNode.rowIndex;
+
+                $(".highlighted").removeClass("highlighted");
+                isMouseDown = true;
+                daySelected = $(this).data('day');
+                if (daySelected !== undefined) {
+                    $(this).toggleClass("highlighted");
+                }
+
+                return false; // prevent text selection
+            })
+            .mouseover(function() {
+                if (isMouseDown) {
+                    if (!$(this).hasClass("highlighted") &&
+                        daySelected !== undefined &&
+                        $(this).data('day') === daySelected) {
+                        $(this).toggleClass("highlighted");
+                    }
+                }
+            });
+
+        $(".table tbody td")
+            .mouseup(function() {
+                isMouseDown = false;
+                endHour = $(this)[0].parentNode.rowIndex;
+                if (endHour < startHour) {
+                    let c = endHour;
+                    endHour = startHour;
+                    startHour = c;
+                }
+
+                if (clickedItem.data()
+                  && clickedItem.data().startTime !== undefined
+                  && clickedItem.data().endTime !== undefined) {
+                  $('.start').data("DateTimePicker").date(clickedItem.data().startTime);
+                  $('.end').data("DateTimePicker").date(clickedItem.data().endTime);
+                } else {
+                  $('.start').data("DateTimePicker").date((startHour - 1) + ':00');
+                  $('.end').data("DateTimePicker").date(endHour + ':00');
+                }
+
+                $(".time-box").css({
+                    top: '20%',
+                    left: $(".table").position().left + ($(".table").width() - $(".time-box").width()) / 2,
+                    position: 'fixed'
+                });
+
+                $(".time-box").show();
+            });
+
+        // dialog
+        $("#applyButton").click(function() {
+            let startTime = $('.start').data("DateTimePicker").date().format('HH:mm');
+            let endTime = $('.end').data("DateTimePicker").date().format('HH:mm');
+            let time = startTime + ' - ' + endTime;
+            startHour = $('.start').data("DateTimePicker").date().format('HH');
+            endHour = $('.end').data("DateTimePicker").date().format('HH');
+            if (endHour < startHour || startTime == endTime) {
+                alert("Select correct hours!");
+            } else {
+
+                var arr = jQuery.grep($('.table tr').eq(1).find("td"), function(n, i) {
+                    return ($(n).data() && $(n).data().day == daySelected);
+                });
+
+                $('.table tbody tr td:nth-child(' + daySelected + ')').removeClass("highlighted");
+                var selectedCells = jQuery.grep($('.table tbody tr td:nth-child(' + daySelected + ')'), function(n, i) {
+                    if (startHour == endHour)
+                        return (i == startHour)
+                    else
+                        return (i > startHour - 1 && i < endHour);
+                });
+
+                selectedCells.forEach(function(element) {
+                    $(element).text("");
+                });
+                $(selectedCells[0]).text(time);
+                selectedCells.forEach(function(element) {
+                    $(element).data('startTime', startTime);
+                    $(element).data('start', startHour);
+                    $(element).data('endTime', endTime);
+                    $(element).data('end', endHour);
+                    $(element).addClass("highlighted-final");
+                    $(element).removeClass("highlighted");
+                });
+
+                $(".time-box").hide();
+            }
+        });
+
+        $("#cancelButton").click(function() {
+            let startPos = $(clickedItem).data().start;
+            let endPos = $(clickedItem).data().end;
+            let toClear = jQuery.grep($('.table tbody tr td:nth-child(' + daySelected + ')'), function(n, i) {
+                if (startPos == endPos)
+                    return (i == startPos)
+                else
+                    return (i > startPos - 1 && i < endPos);
+            });
+            toClear.forEach(function(element) {
+                $(element).text("");
+                $(element).removeData('startTime');
+                $(element).removeData('start');
+                $(element).removeData('endTime');
+                $(element).removeData('end');
+                $(element).removeClass("highlighted-final");
+                $(element).removeClass("highlighted");
+            });
+            $(".time-box").hide();
+        });
+
+    });
+   </script>
+   </body>
+</html>

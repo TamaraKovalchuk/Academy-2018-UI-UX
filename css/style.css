@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    font-family: Sailec, sans-serif;
+}
+
+body {
+    background: #E6E6E6;
+    max-width: 80vw;
+    margin: 2vw auto;
+}
+
+.body-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-time {
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-photo {
+    max-width: 17vw;
+    max-height: 20vw;
+    border-radius: 5%;
+    margin-bottom: 1vw;
+}
+
+.user-info {
+    max-width: 20vw;
+    max-height: 10vw;
+    background: #F6F6F6;
+    text-align: center;
+    border-radius: 5%;
+    padding: 0 2vw;
+}
+
+.icon {
+    margin-right: .6vw;
+}
+
+.icon-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw 0;
+}
+
+.h1 {
+    font-size: 2vw;
+    color: #3D3D3D;
+}
+
+.p {
+    font-size: 1vw;
+    color: #3D3D3D;
+    margin: 0vw;
+}
+
+.h1-choose {
+    margin: 1vw 0 !important;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: bold;
+    color: #3D3D3D;
+}
+
+
+/*table*/
+
+.table {
+    -webkit-font-smoothing: antialiased;
+    font-size: 1vw;
+    overflow: inherit;
+    max-width: 60vw;
+}
+
+.table th {
+    background-color: #7DB8EB;
+    color: white;
+    font-weight: normal;
+    width: 8vw;
+    height: 3vw;
+    border: solid 1px grey !important;
+    text-align: center;
+}
+
+.table td {
+    background-color: rgb(238, 238, 238);
+    color: rgb(111, 111, 111);
+    width: 5vw;
+    height: 3vw;
+    text-align: center;
+    border: solid 1px grey !important;
+}
+
+.table td:nth-child(1) {
+    background-color: #7DB8EB;
+}
+
+.table td:nth-child(2):hover {
+    background: grey;
+}
+
+.table td:nth-child(3):hover {
+    background: grey;
+}
+
+.table td:nth-child(4):hover {
+    background: grey;
+}
+
+.table td:nth-child(5):hover {
+    background: grey;
+}
+
+.table td:nth-child(6):hover {
+    background: grey;
+}
+
+.table td:nth-child(7):hover {
+    background: grey;
+}
+
+.table td:nth-child(8):hover {
+    background: grey;
+}
+
+
+/*time*/
+
+.time-box {
+    display: none;
+    position: absolute;
+    max-height: 50vw;
+    max-width: 40vw;
+    justify-content: center;
+    background: #F6F6F6;
+    border: solid 2px grey;
+}
+
+.start-end-woks {
+    min-width: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+}
+
+.start-time tbody tr,
+.end-time tbody tr {
+    text-align: center;
+}
+
+.start-end {
+    display: flex;
+    justify-content: center;
+}
+
+.p-0 {
+    background: #7DB8EB;
+    border-radius: 10%;
+    font-weight: bold;
+    width: 6vw;
+    font-size: .9vw;
+    text-align: center;
+    padding: 1vw 0;
+}
+
+.apply-close {
+    font-weight: bold;
+}
+
+.apply-close:active {
+    background: #749FC4;
+}
+
+.row {
+    margin-right: 0vw;
+    margin-left: 0vw;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.col-md-8 {
+    padding: 0vw;
+}
+
+
+/*time*/
+
+
+/*JS*/
+
+.working-hour {
+    width: 7.4vw;
+    height: 6vw;
+    background: #afa5af;
+    position: absolute;
+    top: 385px;
+    left: 712px;
+    opacity: 0.7;
+}
+
+
+/*JS*/
+
+
+/*tablet*/
+
+@media screen and (max-width: 1230px) {
+    .icon {
+        display: none;
+    }
+}
